@@ -2,7 +2,10 @@
 
 Questo è uno script bat che scarica e "installa" il software della neoHMI
 
-### istruzioni
+### istruzioni (sulla macchina)
+- connettere la macchina a internet
+- scaricare e installare nodejs
+- scaricare e installare git
 - scaricare il .bat
 - eseguire il .bat
 
