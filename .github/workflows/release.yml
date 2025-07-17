@@ -57,6 +57,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./install-${{ steps.get_tag.outputs.new_tag }}.bat
+          asset_path: ./${{ steps.get_tag.outputs.new_tag }}_install.bat
           asset_name: ${{ steps.get_tag.outputs.new_tag }}_install.bat
           asset_content_type: application/octet-stream
