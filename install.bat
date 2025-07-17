@@ -9,7 +9,7 @@ mkdir C:\neoHMI
 move neoHMI C:\neoHMI
 cd C:\neoHMI\neoHMI
 
-call setup.bat
+call setup.bat 1
 
 
 echo "neoHMI installed!"
