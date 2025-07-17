@@ -54,8 +54,9 @@ jobs:
 
       - name: Upload versioned install.bat
         uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./install-${{ steps.get_tag.outputs.new_tag }}.bat
           asset_name: install-${{ steps.get_tag.outputs.new_tag }}.bat
