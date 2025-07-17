@@ -39,4 +39,5 @@ exit /b
 
 :error_folder_already_exists
 echo "Error! neoHMI is already installed in this system! If you're trying to update run the integrated update.bat"
+pause
 goto check_exit
