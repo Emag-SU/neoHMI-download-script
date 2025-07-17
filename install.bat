@@ -14,4 +14,4 @@ call setup.bat 1
 
 echo "neoHMI installed!"
 pause
-exit
+(goto) 2>nul & del "%~f0"
