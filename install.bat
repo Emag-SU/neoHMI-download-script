@@ -6,7 +6,7 @@ echo "Installing neoHMI..."
 set install_folder="C:\neoHMI"
 if exist "%install_folder%\" goto error_folder_already_exists
 
-git clone https://github.com/Emag-SU/neoHMI.git
+git clone --depth 1 --recurse-submodules https://github.com/Emag-SU/neoHMI.git
 
 mkdir C:\neoHMI
 move neoHMI C:\neoHMI
